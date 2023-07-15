@@ -1,16 +1,18 @@
-// Button.stories.ts|tsx
-
 import type { Meta, StoryObj } from "@storybook/react";
 
-import Button from "./Button";
+import Button, { ButtonProps } from "./Button";
 
-const meta: Meta<typeof Button> = {
+const meta: Meta<ButtonProps> = {
+  title: "Molecules/Button",
+  tags: ["autodocs"],
   component: Button,
+  argTypes: {},
 };
 
 export default meta;
-type Story = StoryObj<typeof Button>;
 
-export const Primary: Story = {
-  render: () => <Button>oi</Button>,
+export const Primary: StoryObj<ButtonProps> = {
+  args: {
+    children: "Botão",
+  },
 };
