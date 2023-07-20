@@ -3,8 +3,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import Button, { ButtonProps } from "./Button";
 
 const meta: Meta<ButtonProps> = {
-  title: "Molecules/Button",
-  tags: ["autodocs"],
+  title: "Button",
   component: Button,
   argTypes: {
     children: {
@@ -28,9 +27,62 @@ export const Primary: StoryObj<ButtonProps> = {
   },
 };
 
-export const Violet: StoryObj<ButtonProps> = {
+export const PrimaryDisabled: StoryObj<ButtonProps> = {
+  args: {
+    children: "Botão",
+    disabled: false,
+  },
+};
+
+export const Secondary: StoryObj<ButtonProps> = {
+  args: {
+    children: "Botão",
+    variant: "secondary",
+  },
+};
+
+export const SecondaryDisabled: StoryObj<ButtonProps> = {
+  args: {
+    children: "Botão",
+    variant: "secondary",
+    disabled: false,
+  },
+};
+
+export const Tertiary: StoryObj<ButtonProps> = {
+  args: {
+    children: "Botão",
+    variant: "tertiary",
+  },
+};
+
+export const TertiaryDisabled: StoryObj<ButtonProps> = {
+  args: {
+    children: "Botão",
+    variant: "tertiary",
+    disabled: false,
+  },
+};
+
+export const VioletPrimary: StoryObj<ButtonProps> = {
   args: {
     children: "Botão",
     className: "theme-violet",
+  },
+};
+
+export const VioletSecondary: StoryObj<ButtonProps> = {
+  args: {
+    children: "Botão",
+    className: "theme-violet",
+    variant: "secondary",
+  },
+};
+
+export const VioletTertiary: StoryObj<ButtonProps> = {
+  args: {
+    children: "Botão",
+    className: "theme-violet",
+    variant: "tertiary",
   },
 };
