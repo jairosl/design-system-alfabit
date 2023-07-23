@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import Button, { ButtonProps } from "./Button";
 
 const meta: Meta<ButtonProps> = {
-  title: "Button",
+  title: "Molecules/Button",
   component: Button,
   argTypes: {
     children: {
