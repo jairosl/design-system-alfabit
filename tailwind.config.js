@@ -15,6 +15,9 @@ module.exports = {
       md: "var(--text-md)",
       lg: "var(--text-lg)",
       xl: "var(--text-xl)",
+      tmd: "var(--title-md)",
+      tlg: "var(--title-lg)",
+      txl: "var(--title-xl)",
     },
     screens: {
       mobile: "var(--screen-mobile)",
